@@ -58,6 +58,9 @@ void main(void)
     printf("\nEncrypted: ");
     printints(msg, len);
     
+    // Print an intermediary counter
+    printCounters();
+    
     cntStart = 0;
     msg_decipher(msg, len, &cntStart);
     printf("\nDecrypted: ");
@@ -90,6 +93,9 @@ void main(void)
     
     printf("\nEncrypted: ");
     printchars(state, len);
+    
+    // Print an intermediary counter
+    printCounters();
     
     aes_enc_dec(state,key2,1);
     printf("\nDecrypted: ");
