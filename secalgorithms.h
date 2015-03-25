@@ -49,6 +49,8 @@ static key_t2 sKey = {"SimpliciTI's Key"};
  */
 static uint32_t sMsg[2] = {0, 0};
 
+// Variables for AES-128
+
 const unsigned char sbox[256] =   {
     //0     1    2      3     4    5     6     7      8    9     A      B    C     D     E     F
     0x63, 0x7c, 0x77, 0x7b, 0xf2, 0x6b, 0x6f, 0xc5, 0x30, 0x01, 0x67, 0x2b, 0xfe, 0xd7, 0xab, 0x76, //0
