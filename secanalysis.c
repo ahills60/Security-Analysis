@@ -55,14 +55,14 @@ void main(void)
     printf("Input: ");
     printints(msg, len);
     msg_encipher(msg, len, &cntStart);
-    printf("\n\nEncrypted: ");
+    printf("\nEncrypted: ");
     printints(msg, len);
     
     cntStart = 0;
     msg_decipher(msg, len, &cntStart);
-    printf("\n\nDecrypted: ");
+    printf("\nDecrypted: ");
     printints(msg, len);
-    printf("\n\n");
+    printf("\n");
     
     for (n = 0; n < len; n++)
     {
@@ -88,14 +88,14 @@ void main(void)
     
     aes_enc_dec(state,key1,0);
     
-    printf("\n\nEncrypted: ");
+    printf("\nEncrypted: ");
     printchars(state, len);
     
     aes_enc_dec(state,key2,1);
-    printf("\n\nDecrypted: ");
+    printf("\nDecrypted: ");
     printchars(state, len);
     
-    printf("\n\n");
+    printf("\n");
     
     // Print counters:
     printCounters();
