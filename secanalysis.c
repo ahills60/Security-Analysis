@@ -15,6 +15,7 @@ void printchars(char *msg, int len)
     
     for (n = 0; n < len; n++)
         printf("%X ", msg[n] & 0xFF);
+    printf("\n");
 }
 
 void printints(uint8_t *msg, int len)
@@ -23,6 +24,7 @@ void printints(uint8_t *msg, int len)
     
     for (n = 0; n < len; n++)
         printf("%X ", msg[n] & 0xFF);
+    printf("\n");
 }
 
 void main(void)
