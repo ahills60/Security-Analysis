@@ -7,12 +7,6 @@
 
 // Variables for XTEA
 
-#define CTR_WINDOW  255
-
-#if (CTR_WINDOW > 255) || (CTR_WINDOW < 0)
-#error ERROR: 0 <= CTR_WINDOW < 256
-#endif
-
 /* Number of rounds for XTEA algorithm. A parameter in the public domain code
  * but we fix it here at 32.
  */
